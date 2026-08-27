@@ -1,0 +1,15 @@
+[0330/234830.829:ERROR:ui\gl\direct_composition_support.cc:638] NVIDIA VideoProcessorGetStreamExtension failed: GPU 设备实例已经暂停。使用 GetDeviceRemovedReason 以确定相应的措施。 (0x887A0005)
+[0330/234830.836:ERROR:ui\gl\direct_composition_support.cc:899] CreateVideoProcessorEnumerator failed: GPU 设备实例已经暂停。使用 GetDeviceRemovedReason 以确定相应的措施。 (0x887A0005)
+[0330/234830.838:ERROR:ui\gl\direct_composition_support.cc:577] CreateVideoProcessorEnumerator failed: GPU 设备实例已经暂停。使用 GetDeviceRemovedReason 以确定相应的措施。 (0x887A0005)
+[0330/234830.842:ERROR:ui\gl\direct_composition_support.cc:577] CreateVideoProcessorEnumerator failed: GPU 设备实例已经暂停。使用 GetDeviceRemovedReason 以确定相应的措施。 (0x887A0005)
+[0330/234830.842:ERROR:ui\gl\direct_composition_support.cc:899] CreateVideoProcessorEnumerator failed: GPU 设备实例已经暂停。使用 GetDeviceRemovedReason 以确定相应的措施。 (0x887A0005)
+[0330/234830.845:ERROR:ui\gl\direct_composition_support.cc:577] CreateVideoProcessorEnumerator failed: GPU 设备实例已经暂停。使用 GetDeviceRemovedReason 以确定相应的措施。 (0x887A0005)
+[0330/234830.846:ERROR:ui\gl\direct_composition_support.cc:899] CreateVideoProcessorEnumerator failed: GPU 设备实例已经暂停。使用 GetDeviceRemovedReason 以确定相应的措施。 (0x887A0005)
+[0330/234830.850:ERROR:ui\gl\direct_composition_support.cc:899] CreateVideoProcessorEnumerator failed: GPU 设备实例已经暂停。使用 GetDeviceRemovedReason 以确定相应的措施。 (0x887A0005)
+[0330/234830.854:ERROR:ui\gl\angle_platform_impl.cc:49] Renderer11.cpp:2209 (virtual rx::Renderer11::testDeviceLost): The D3D11 device was removed, HRESULT: 0x887A0005
+[0330/234830.854:ERROR:gpu\command_buffer\service\shared_context_state.cc:1325] SharedContextState context lost via ARB/EXT_robustness. Reset status = GL_UNKNOWN_CONTEXT_RESET_KHR
+[0330/234830.855:ERROR:components\viz\service\gl\gpu_service_impl.cc:1173] Exiting GPU process because some drivers can't recover from errors. GPU process will restart shortly.
+[0330/234834.133:ERROR:ui\gl\direct_composition_support.cc:512] QueryVideoProcessorCustomExtForHDR: Failed to retrieve D3D11 device
+[0330/234834.133:ERROR:ui\gl\direct_composition_support.cc:512] QueryVideoProcessorCustomExtForHDR: Failed to retrieve D3D11 device
+[0330/234834.133:ERROR:ui\gl\direct_composition_support.cc:512] QueryVideoProcessorCustomExtForHDR: Failed to retrieve D3D11 device
+[0330/234834.134:ERROR:ui\gl\direct_composition_support.cc:512] QueryVideoProcessorCustomExtForHDR: Failed to retrieve D3D11 device

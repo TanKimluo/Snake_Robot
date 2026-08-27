@@ -1,0 +1,53 @@
+Title: Mechanical Design
+
+Brief intro of the project:
+The importance of mechanical design is self-evident for robotics. This project develops
+ novel modular robots.
+
+Job description/workload
+Students's job includes designing the mechanical structure of the robot modules 
+based on the robot's conceptual configuration and 
+functional requirements. This involves selecting standard components with 
+appropriate specifications, for examples, motors, transmission mechanisms, and
+ fasteners, as well as designing the remaining non-standard structural parts
+  and covers through parametric modeling. The final mechanical design should
+   meet standards of modularity, full disassembly and assembly via
+ fasteners, interference-free parts, and manufacturability (machining).
+  The workload is expected to be at least 12 hours per week. 
+
+Keywords of this project
+Robotics, Mechanical Design, Modular Design
+
+Eligibility 
+Students must finish the following prerequisite task and send the required material
+ to zhongqiang.ren@sjtu.edu.cn to show their capability before joining the project.
+
+Prerequisite: 
+Your task is to use any 3D modeling software to design a snake robot module with
+ a single DoF, and assemble 12 of your designed modules into a complete snake robot.
+  The adjacent DoF of the snake robot should be arranged in an orthogonal configuration.
+ You may refer to the modular design structure and configuration in 
+(https://ieeexplore.ieee.org/abstract/document/6943219). 
+ The motor model and drawings can be downloaded from
+(https://drive.google.com/drive/folders/1-M2WrZcG9g-qQKNJey8KFbdslrB4ziiq?usp=drive_link).
+ The 3D models of fasteners can be generated using "大国工匠" platform.
+  Finally, the mechanical structure of your designed robot must be disassemblable,
+   support wiring, and be manufacturable. 
+
+GUIDELINES: The given motor is a joint motor with a built-in reducer,
+ so you hardly need to design any additional transmission structure.
+
+REFERENCE:
+1. If you have no experience in any 3D CAD software before,
+ you can learn SolidWorks in 
+(https://www.bilibili.com/video/BV1iw411Z7HZ/?share_source=copy_web&vd_source=c88159cdbbf9b7d393a454c26a332460).
+2. You can learn the meanings of parameters related to standard parts and 
+the national standards
+ from chapter 5, 10, 12, and 13 in textbook《机械设计（第十版）》(濮良贵).
+
+Please submit a zip that includes:
+1. All part and assembly files, placed in a structure that ensures
+ they can be opened correctly in CAD softwares. If your CAD software is not SolidWorks, 
+please convert your files into .stp format and submit.
+2. An exploded view animation video of the designed robot module.
+Send your folder in a zip to zhongqiang.ren@sjtu.edu.cn.
