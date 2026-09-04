@@ -57,6 +57,66 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define PWM8_Pin GPIO_PIN_6
+#define PWM8_GPIO_Port GPIOE
+#define M8IN2_Pin GPIO_PIN_13
+#define M8IN2_GPIO_Port GPIOC
+#define M8IN1_Pin GPIO_PIN_14
+#define M8IN1_GPIO_Port GPIOC
+#define M7IN1_Pin GPIO_PIN_2
+#define M7IN1_GPIO_Port GPIOC
+#define M7IN2_Pin GPIO_PIN_3
+#define M7IN2_GPIO_Port GPIOC
+#define PWM7_Pin GPIO_PIN_0
+#define PWM7_GPIO_Port GPIOA
+#define PWM4_Pin GPIO_PIN_9
+#define PWM4_GPIO_Port GPIOE
+#define M4IN2_Pin GPIO_PIN_10
+#define M4IN2_GPIO_Port GPIOE
+#define M4IN1_Pin GPIO_PIN_11
+#define M4IN1_GPIO_Port GPIOE
+#define M3IN1_Pin GPIO_PIN_12
+#define M3IN1_GPIO_Port GPIOE
+#define M3IN2_Pin GPIO_PIN_13
+#define M3IN2_GPIO_Port GPIOE
+#define PWM3_Pin GPIO_PIN_14
+#define PWM3_GPIO_Port GPIOE
+#define PWM1_Pin GPIO_PIN_15
+#define PWM1_GPIO_Port GPIOB
+#define M1IN2_Pin GPIO_PIN_8
+#define M1IN2_GPIO_Port GPIOD
+#define M1IN1_Pin GPIO_PIN_9
+#define M1IN1_GPIO_Port GPIOD
+#define M2IN1_Pin GPIO_PIN_10
+#define M2IN1_GPIO_Port GPIOD
+#define M2IN2_Pin GPIO_PIN_11
+#define M2IN2_GPIO_Port GPIOD
+#define M1PWMA_Pin GPIO_PIN_12
+#define M1PWMA_GPIO_Port GPIOD
+#define M1PWMB_Pin GPIO_PIN_13
+#define M1PWMB_GPIO_Port GPIOD
+#define PWM2_Pin GPIO_PIN_14
+#define PWM2_GPIO_Port GPIOD
+#define M2PWMA_Pin GPIO_PIN_6
+#define M2PWMA_GPIO_Port GPIOC
+#define M2PWMB_Pin GPIO_PIN_7
+#define M2PWMB_GPIO_Port GPIOC
+#define UART_TX_Pin GPIO_PIN_10
+#define UART_TX_GPIO_Port GPIOC
+#define UART_RX_Pin GPIO_PIN_11
+#define UART_RX_GPIO_Port GPIOC
+#define PWM5_Pin GPIO_PIN_3
+#define PWM5_GPIO_Port GPIOB
+#define M5IN2_Pin GPIO_PIN_4
+#define M5IN2_GPIO_Port GPIOB
+#define M5IN1_Pin GPIO_PIN_5
+#define M5IN1_GPIO_Port GPIOB
+#define M6IN1_Pin GPIO_PIN_6
+#define M6IN1_GPIO_Port GPIOB
+#define M6IN2_Pin GPIO_PIN_7
+#define M6IN2_GPIO_Port GPIOB
+#define PWM6_Pin GPIO_PIN_8
+#define PWM6_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
