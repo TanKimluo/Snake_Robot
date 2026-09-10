@@ -53,40 +53,56 @@ void MX_GPIO_Init(void)
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOC, M8IN2_Pin|M8IN1_Pin|M7IN1_Pin|M7IN2_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOC, M8IN2_Pin|M8IN1_Pin|TB_STBY4_Pin|M7IN1_Pin
+                          |M7IN2_Pin|M2IN2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOE, M4IN2_Pin|M4IN1_Pin|M3IN1_Pin|M3IN2_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(LAN_NRST_GPIO_Port, LAN_NRST_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOD, M1IN2_Pin|M1IN1_Pin|M2IN1_Pin|M2IN2_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOE, TCA_RESET_Pin|M4IN2_Pin|M4IN1_Pin|TB_STBY2_Pin
+                          |M3IN1_Pin|M3IN2_Pin|M5IN2_Pin|STM_LED_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, M5IN2_Pin|M5IN1_Pin|M6IN1_Pin|M6IN2_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOD, M1IN2_Pin|M1IN1_Pin|TB_STBY1_Pin|M2IN1_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : M8IN2_Pin M8IN1_Pin M7IN1_Pin M7IN2_Pin */
-  GPIO_InitStruct.Pin = M8IN2_Pin|M8IN1_Pin|M7IN1_Pin|M7IN2_Pin;
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOB, M6IN2_Pin|M6IN1_Pin|TB_STBY3_Pin|M5IN1_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pins : M8IN2_Pin M8IN1_Pin TB_STBY4_Pin M7IN1_Pin
+                           M7IN2_Pin M2IN2_Pin */
+  GPIO_InitStruct.Pin = M8IN2_Pin|M8IN1_Pin|TB_STBY4_Pin|M7IN1_Pin
+                          |M7IN2_Pin|M2IN2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : M4IN2_Pin M4IN1_Pin M3IN1_Pin M3IN2_Pin */
-  GPIO_InitStruct.Pin = M4IN2_Pin|M4IN1_Pin|M3IN1_Pin|M3IN2_Pin;
+  /*Configure GPIO pin : LAN_NRST_Pin */
+  GPIO_InitStruct.Pin = LAN_NRST_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(LAN_NRST_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : TCA_RESET_Pin M4IN2_Pin M4IN1_Pin TB_STBY2_Pin
+                           M3IN1_Pin M3IN2_Pin M5IN2_Pin STM_LED_Pin */
+  GPIO_InitStruct.Pin = TCA_RESET_Pin|M4IN2_Pin|M4IN1_Pin|TB_STBY2_Pin
+                          |M3IN1_Pin|M3IN2_Pin|M5IN2_Pin|STM_LED_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : M1IN2_Pin M1IN1_Pin M2IN1_Pin M2IN2_Pin */
-  GPIO_InitStruct.Pin = M1IN2_Pin|M1IN1_Pin|M2IN1_Pin|M2IN2_Pin;
+  /*Configure GPIO pins : M1IN2_Pin M1IN1_Pin TB_STBY1_Pin M2IN1_Pin */
+  GPIO_InitStruct.Pin = M1IN2_Pin|M1IN1_Pin|TB_STBY1_Pin|M2IN1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : M5IN2_Pin M5IN1_Pin M6IN1_Pin M6IN2_Pin */
-  GPIO_InitStruct.Pin = M5IN2_Pin|M5IN1_Pin|M6IN1_Pin|M6IN2_Pin;
+  /*Configure GPIO pins : M6IN2_Pin M6IN1_Pin TB_STBY3_Pin M5IN1_Pin */
+  GPIO_InitStruct.Pin = M6IN2_Pin|M6IN1_Pin|TB_STBY3_Pin|M5IN1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

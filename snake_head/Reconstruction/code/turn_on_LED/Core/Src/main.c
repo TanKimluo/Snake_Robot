@@ -91,17 +91,13 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_ETH_Init();
+  MX_I2C3_Init();
   MX_TIM1_Init();
   MX_TIM2_Init();
   MX_TIM4_Init();
-  MX_TIM5_Init();
   MX_TIM8_Init();
   MX_TIM9_Init();
-  MX_TIM10_Init();
-  MX_TIM11_Init();
   MX_TIM12_Init();
-  MX_TIM13_Init();
-  MX_I2C3_Init();
   MX_UART4_Init();
   /* USER CODE BEGIN 2 */
 
@@ -161,10 +157,6 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-
-  /** Enables the Clock Security System
-  */
-  HAL_RCC_EnableCSS();
 }
 
 /* USER CODE BEGIN 4 */
