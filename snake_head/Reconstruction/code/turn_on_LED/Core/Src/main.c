@@ -69,7 +69,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+  HAL_GPIO_Write_Pin(STM_LED_GPIO_Port,STM_LED_Pin,GPIO_PIN_SET);
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
